@@ -1,0 +1,22 @@
+.f-title {
+    border-left: 5px solid #5cb85c;
+    padding-left: 9px;
+}
+
+.list-group li {
+    color: rgb(146, 146, 146);
+}
+
+.social-links {
+    list-style: none;
+}
+
+.footer-nav-link {
+    text-decoration: none;
+    color: #999999
+}
+
+.footer-nav-link:hover {
+    color: #fff;
+    transition: color 0.5s;
+}

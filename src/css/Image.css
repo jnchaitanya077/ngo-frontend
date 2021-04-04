@@ -1,0 +1,68 @@
+card-image {
+    position: relative;
+    width: 200px;
+}
+
+/* img {
+    background-image: url("https://webmeup.com/upload/blog/lead-image-105.png");
+    display: block;
+    width: 100%;
+    height: auto;
+} */
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    background-color: rgba(68, 67, 65, 0.705);
+    transition: 0.5s ease;
+}
+
+.card-image:hover .overlay {
+    opacity: 1;
+}
+
+.text {
+    position: absolute;
+    top: 5%;
+    left: 4%;
+    color: white;
+    font-size: 90%;
+    padding-left: 3%;
+}
+
+.text2 {
+    position: absolute;
+    top: 50%;
+    left: 10%;
+    color: white;
+}
+
+.cssanimation,
+.cssanimation span {
+    animation-duration: 0.5s;
+    animation-fill-mode: both;
+}
+
+.cssanimation span {
+    display: inline-block;
+}
+
+.infinite {
+    animation-iteration-count: infinite !important;
+}
+
+.card-image:hover .moveFromLeft {
+    animation-name: moveFromLeft;
+}
+
+@keyframes moveFromLeft {
+    from {
+        transform: translateX(-50px);
+    }
+}

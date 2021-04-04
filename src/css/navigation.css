@@ -1,0 +1,133 @@
+/**
+ * /* remove the gap so that the user’s cursor 
+ * can move from parent link to the dropdown 
+ * without deactivating everything again:
+ *
+ * @format
+ */
+
+.dropdown-menu {
+  margin-top: 0;
+}
+
+/* nabar */
+.navbar {
+  padding: 5px 5%;
+  background-color: #39bb39;
+}
+/* #35b736 */
+
+/* Navbar-brand */
+.navbar-brand {
+  color: #fff !important;
+  font-weight: 600;
+  font-size: 1.5rem;
+}
+
+/* Hamburger Icon Colors */
+
+.custom-toggler .navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(92, 184, 92, 0.5)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+}
+
+.custom-toggler.navbar-toggler {
+  border-color: #d5d6d5dc;
+}
+
+/* change color on hove on nav links */
+.nav-link {
+  /* color: #979393 !important; */
+  /* display: block;
+    padding: .5rem 1rem; */
+  /* text-decoration: none; */
+  /* transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out,
+    border-color 0.15s ease-in-out; */
+  /* padding-right: .5rem;
+    padding-left: .5rem; */
+  color: rgb(255, 255, 255) !important;
+}
+
+/* dropdown menu */
+.dropdown-menu {
+  /* background-color: #35b736; */
+  background-color: #e3fbe6;
+  /* color: white; */
+  min-width: max-content;
+  margin-top: 0px;
+}
+
+/* drop down color */
+.dropdown-item {
+  color: rgb(34, 34, 34) !important;
+}
+
+/* dropdown link colours */
+.dropdown-menu a {
+  color: rgb(73, 73, 73) !important;
+}
+
+.nav-link:hover,
+.dropdown-item:hover {
+  background-color: #35b736;
+  /* color: #35b736 !important; */
+  color: #fff !important;
+  transition: color, 0.3s !important;
+}
+
+/* .nav-link:hover {
+  background-color: #fff !important;
+  color: #35b736 !important;
+} */
+
+/* Donate button */
+/* .donate {
+    color: #fff;
+}
+
+.cta {
+    color: #fff;
+}
+
+.cta:hover {
+    background-color: transparent !important;
+    color: #35B736 !important;
+    transition: background-color, 0.3s;
+    border-color: #35B736 !important;
+}
+
+.donate:hover {
+    background-color: transparent !important;
+    color: #fff !important;
+    transition: background-color, 0.3s;
+    border-color: #fff !important;
+} */
+
+/* Sticky navigation animations */
+
+.fixed-top {
+  animation: moveDown 0.5s ease-in-out !important;
+}
+
+@keyframes moveDown {
+  from {
+    transform: translateY(-5rem);
+  }
+
+  to {
+    transform: translateY(0rem);
+  }
+}
+
+@media only screen and (min-width: 991px) {
+  /*color changes to yellow when hover on each dropdown*/
+  nav li:hover {
+    /* background-color: rgb(235, 195, 52); */
+    transition: background-color 0.4s;
+  }
+
+  .nav-item:hover .dropdown-menu {
+    display: block;
+  }
+}
+
+/* #ff2c07 */

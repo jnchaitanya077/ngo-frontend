@@ -1,0 +1,10 @@
+.action-btn {
+    color: rgb(255, 255, 255);
+}
+
+.action-btn:hover {
+    background-color: #fff !important;
+    color: #5cb85c !important;
+    transition: background-color, 0.3s;
+    border-color: #5cb85c !important;
+}

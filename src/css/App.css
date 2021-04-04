@@ -1,0 +1,113 @@
+/**
+ * /* BASIC SETUP
+ *
+ * @format
+ */
+
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+body {
+  font-size: unset;
+}
+
+html {
+  color: #000;
+  font-family: "Noto Sans TC", sans-serif !important;
+  font-weight: 300;
+  font-size: 1.2rem;
+  text-rendering: optimizeLegibility;
+}
+
+/* Main Section (Landing-screen)*/
+.landing-section {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url("../images/main2.jpg");
+  background-attachment: fixed;
+  height: 70vh;
+  background-size: cover;
+  background-position: center;
+  animation: breath 7s;
+  animation-timing-function: linear;
+}
+
+.hero-text-box {
+  color: rgb(240, 235, 235);
+  position: absolute;
+  top: 45%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+.sub-text {
+  color: rgb(185, 184, 184);
+}
+
+@media screen and (min-width: 992px) {
+  .container {
+    width: 1140px !important;
+  }
+}
+
+/* Section colors */
+.even {
+  background-color: #f7f7f7 !important;
+  padding-bottom: 5% !important;
+  padding-top: 5% !important;
+}
+
+.odd {
+  padding-bottom: 5% !important;
+  padding-top: 5% !important;
+}
+
+/* Background Image Animation */
+@keyframes breath {
+  0% {
+    background-size: 100% auto;
+  }
+
+  50% {
+    background-size: 110% auto;
+  }
+
+  100% {
+    background-size: 100% auto;
+  }
+}
+
+/* CSS Animations */
+.cssanimation,
+.cssanimation span {
+  animation-duration: 1s;
+  animation-fill-mode: both;
+}
+
+.cssanimation span {
+  display: inline-block;
+}
+
+.infinite {
+  animation-iteration-count: infinite !important;
+}
+
+/* letter by letter fadeIn animation */
+.leFadeIn span {
+  animation-name: leFadeIn;
+}
+
+@keyframes leFadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}

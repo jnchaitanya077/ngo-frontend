@@ -1,0 +1,6 @@
+/** @format */
+
+.media:hover {
+  color: #d9534f;
+  transition: color 1s;
+}

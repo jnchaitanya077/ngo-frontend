@@ -1,0 +1,31 @@
+.info {
+    position: relative;
+}
+
+.info-para {
+    margin-left: 90px;
+}
+
+.process {
+    margin: 5%;
+}
+
+.greater-icon {
+    position: absolute;
+    top: 10px;
+    font-size: 20px;
+    color: #5cb85c;
+}
+
+@media (max-width: 992px) {
+    .info-para {
+        border-left: 5px solid #5cb85c !important;
+        padding-left: 2%;
+        margin-top: 5px;
+        margin-left: 0px;
+    }
+
+    .greater-icon {
+        display: none !important;
+    }
+}
